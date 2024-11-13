@@ -5,6 +5,36 @@
  * Free to use under the MIT license.
 */
 /* Tabs */
+
+#ABC {
+                background-color: #002633;
+
+<script>
+        const books = document.querySelectorAll('.book');
+
+        books.forEach(book => {
+            book.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.5)';
+            });
+
+            book.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    
+
+        /* Your CSS styling for the library */
+        .book {
+            width: 500px;
+            height: 500px;
+            transition: transform 0.3s;
+        }
+
+        .book:hover {
+            transform: scale(1.2);
+        }
+    
+
 .tab-item {
   background: none repeat scroll 0 0 #fff;
   display: none;
