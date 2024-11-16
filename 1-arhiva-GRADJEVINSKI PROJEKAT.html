@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ARHIVA FAJLOVA</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,700,800&amp;subset=latin-ext" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	   
+	   
+	   
+	   
+	   <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	<style>
+        /* Your CSS styling for the library */
+	   
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #221E1E;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 50px;
+  margin: 0 2px;
+  background-color: #F3EAEA;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+		  
+		  .paragraf {
+			  height: 25px;
+		  }		 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+        .book {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.3s;
+			display:inline-block;
+			margin-right: 10px;
+			
+        }
+        .book:hover {
+            transform: scale(1.2);
+        }
+		  #library {white-space: nowrap;
+			        margin: 0 auto;
+		            width: 100%; 
+	    }
+	    .file {
+			 margin-left: auto;
+             margin-right: auto; 
+			 text-align: center;
+	    }
+		  
+    </style>
+    
+</head>
+
+   <body class="size-1140 primary-color-red background-dark">
+   <!-- HEADER -->
+   <header class="grid">
+     <!-- Top Navigation -->
+     <nav class="s-12 grid background-none background-primary-hightlight">
+       <!-- logo -->
+       <a href="index-main.html" class="m-12 l-3 padding-2x logo"> <img src="img/logo.svg" alt=""> </a>
+       <div class="top-nav s-12 l-9">
+         <ul class="top-ul right chevron">
+           <li><a href="slucaj 1.html">NAZAD</a></li>
+           <li><a href="galerija.html">GALERIJA</a></li>
+           <li><a href="pomoc.html">POMOĆ</a></li>
+           <li><a href="kontakt.html">KONTAKT</a></li>
+         </ul>
+       </div>
+     </nav>
+   </header>
+   <!-- MAIN -->
+   <main role="main">
+     <!-- TOP SECTION -->
+     <section class="grid">
+       <!-- Main Carousel -->
+       <div class="s-12 margin-bottom carousel-fade-transition owl-carousel carousel-main carousel-nav-white carousel-hide-arrows background-dark">
+         <div class="item background-image" style="background-image:url(img/A1.jpg)">
+           <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">arhiva fajlova</p>
+         </div>
+         <div class="item background-image" style="background-image:url(img/A2.jpg)">
+           <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">arhiva fajlova</p>
+         </div>
+         <div class="item background-image" style="background-image:url(img/A3.jpg)">
+           <p class="text-padding text-strong text-white text-s-size-30 text-size-60 text-uppercase background-primary">arhiva fajlova</p>
+         </div>
+       </div>
+     </section>
+     <script type="text/javascript" src="js/responsee.js"></script>
+     <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+     <script type="text/javascript" src="js/template-scripts.js"></script>
+   </main>
+	   
+ 
+ <div id="library" class="file">
+        
+	 
+	 <a href="1-arhiva-POLICIJSKI IZVESTAJ.html"><img class="book" src="img/s1-5.jpg" alt="Book 5" title="POLICIJSKI IZVEŠTAJ">
+	 </a>
+	 <a href="1-arhiva-IZVESTAJ SA AUTOPSIJE.html"><img class="book" src="img/s1-7.jpg" alt="Book 7" title="IZVEŠTAJ SA AUTOPSIJE">
+	 </a>
+	 <a href="1-arhiva-BOLNICKA DOKUMENTACIJA.html"><img class="book" src="img/s1-2.jpg" alt="Book 2" title="BOLNIČKA DOKUMENTACIJA">
+	 </a>
+	 <a href="1-arhiva-IZJAVE SVEDOKA.html"><img class="book" src="img/s1-3.jpg" alt="Book 3" title="IZJAVE SVEDOKA">
+	 </a>		
+	 <a href="1-arhiva-KOPIJE DNEVNIKA.html"><img class="book" src="img/s1-4.jpg" alt="Book 4" title="KOPIJE DNEVNIKA">
+	 </a>		 
+	 <a href="1-arhiva-IZJAVE PORODICA.html"><img class="book" src="img/s1-6.jpg" alt="Book 6" title="IZJAVE PORODICE">
+	 </a>
+	 <a href="1-arhiva-GRADJEVINSKI PROJEKAT.html"><img class="book" src="img/s1-8.jpg" alt="Book 8" title="GRAĐEVINSKI PROJEKAT">
+	 </a>
+	 <a href="1-arhiva-PISMA.html"><img class="book" src="img/s1-9.jpg" alt="Book 9" href="1/fail.9.html" title="PISMA">
+	 </a>
+	    
+	 </div>
+        <!-- Add more book images here -->
+	 
+	 
+
+	 
+	 
+	 
+	   
+	  
+	   
+<div class="paragraf"></div>
+</div>
+<p class="file">GRAĐEVINSKI PROJEKAT: PLAN-IV SPRAT,BLOK-B.
+	   </p>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+ 
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 1</div>
+  <img src="case1/PROJEKAT.png" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	 
+   
+	 
+	   <script>
+        const books = document.querySelectorAll('.book');
+        books.forEach(book => {
+            book.addEventListener('mouseover', function() {<hr>
+
+                this.style.transform = 'scale(1.5)';
+            });
+            book.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+	   <!-- SECTION -->
+  
+	   <div class="s-12 text-center margin-bottom">
+          <p class="text-size-12">Copyright 2024, Gagygargamel Design - graphic </p>
+          <p class="text-size-12">
+          <p><a class="text-size-12 text-primary-hover" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Gagygargamel Team</a>          
+          
+        </div> 
+	   
+	   
+	</body>
+	
+</html>
